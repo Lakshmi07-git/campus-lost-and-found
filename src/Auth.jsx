@@ -16,9 +16,9 @@ function Auth({ onBack }) {
     setMessage('')
     setLoading(true)
 
-    const url = isLogin
-      ? 'http://localhost:5000/api/auth/login'
-      : 'http://localhost:5000/api/auth/register'
+ const url = isLogin
+  ? 'https://campus-lost-and-found-items.onrender.com/api/auth/login'
+  : 'https://campus-lost-and-found-items.onrender.com/api/auth/register'
 
     const data = isLogin
       ? { collegeEmail, password }

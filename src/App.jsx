@@ -19,7 +19,7 @@ function App() {
   // Load items from MongoDB
   useEffect(() => {
     if (page === 'items') {
-      fetch('http://localhost:5000/api/items')
+      fetch('https://campus-lost-and-found-items.onrender.com/api/items')
         .then(res => res.json())
         .then(data => setItems(Array.isArray(data) ? data : []))
         .catch(() => setItems([]))
@@ -31,7 +31,7 @@ function App() {
     if (page === 'requests') {
       setRequestMessage('')
 
-      fetch('http://localhost:5000/api/contact-requests/incoming', {
+      fetch('https://campus-lost-and-found-items.onrender.com/api/contact-requests/incoming', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -49,7 +49,7 @@ function App() {
     if (page === 'my-requests') {
       setRequestMessage('')
 
-      fetch('http://localhost:5000/api/contact-requests/my-requests', {
+     fetch('https://campus-lost-and-found-items.onrender.com/api/contact-requests/my-requests', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -66,7 +66,7 @@ function App() {
   const handleDecision = async (requestId, status) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/contact-requests/${requestId}`,
+        `https://campus-lost-and-found-items.onrender.com/api/contact-requests/${requestId}`,
         {
           method: 'PATCH',
           headers: {
@@ -101,7 +101,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/contact-requests/${requestId}/contact`,
+        `https://campus-lost-and-found-items.onrender.com/api/contact-requests/${requestId}/contact`,
         {
           headers: {
             Authorization: `Bearer ${token}`

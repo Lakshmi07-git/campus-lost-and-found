@@ -64,8 +64,8 @@ function ItemForm({ type, onBack, onAddItem }) {
         return
       }
 
-      const response = await fetch('http://localhost:5000/api/items', {
-        method: 'POST',
+const response = await fetch('https://campus-lost-and-found-items.onrender.com/api/items', {
+    method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`
