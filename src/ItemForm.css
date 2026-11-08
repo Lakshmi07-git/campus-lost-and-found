@@ -1,0 +1,117 @@
+
+.item-container {
+  min-height: 100vh;
+  background: #f5f7ff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-box {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 550px;
+  height: fit-content;
+  box-shadow: 0 3px 15px #ddd;
+}
+.item-box h1 {
+  color: #5145cd;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.item-box p {
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.item-box p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.item-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-box input,
+.item-box select,
+.item-box textarea {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+.item-box textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.item-box label {
+  font-weight: bold;
+}
+.item-box input,
+.item-box select,
+.item-box textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item-box input:focus,
+.item-box select:focus,
+.item-box textarea:focus {
+  outline: none;
+  border-color: #5145cd;
+  box-shadow: 0 0 5px #5145cd55;
+}
+
+.item-box button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item-box button:hover {
+  opacity: 0.9;
+}
+
+.item-preview {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.item-box h3 {
+  color: #5145cd;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.success-message {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+.success-message h2 {
+  color: #15803d;
+  margin-bottom: 12px;
+}
+
+.success-message p {
+  color: #166534;
+  line-height: 1.6;
+}

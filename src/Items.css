@@ -1,0 +1,119 @@
+
+.items-container {
+  min-height: 100vh;
+  background: #f5f7ff;
+  padding: 40px 25px;
+}
+
+.items-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.items-header h1 {
+  color: #5145cd;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.items-header p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.items-header button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #5145cd;
+  color: white;
+  cursor: pointer;
+}
+
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.item-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #ddd;
+}
+
+.item-card h2 {
+  color: #333;
+  margin: 18px 0;
+}
+
+.item-card p {
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.lost-tag,
+.found-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.lost-tag {
+  background: #ffe2e2;
+  color: #c62828;
+}
+
+.found-tag {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.empty-message {
+  text-align: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  grid-column: 1 / -1;
+}
+
+.empty-message h2 {
+  color: #5145cd;
+  margin-bottom: 12px;
+}
+
+.empty-message p {
+  color: #666;
+}
+
+.contact-details {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.contact-details h3 {
+  color: #5145cd;
+  margin-bottom: 12px;
+}
+
+.contact-button {
+  display: block;
+  text-align: center;
+  background: #5145cd;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background: #4035ad;
+}
